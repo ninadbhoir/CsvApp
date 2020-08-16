@@ -38,11 +38,14 @@ public class CsvReaderAppFinalBuild
 			csvHeader.append("Symbol,TIMESTAMP,Daily Range,DATR\n");
 			filereader = new FileReader(File1);
 			csvReader = new CSVReader(filereader);
-			writer = new CSVWriter(new FileWriter(outPutFile));
+			System.out.println("--------------Reading Data From CSV Files--------------------------------------");
+			System.out.println();
 			pw = new PrintWriter(new FileWriter(outPutFile));
 			pw.write(csvHeader.toString());
 			String[] record1;
 			csvReader.readNext();
+			System.out.println("--------------Processing File--------------------------------------");
+			System.out.println();
 			while ((record1 = csvReader.readNext()) != null) {
 				symbol = record1[0];
 				date = record1[10];
@@ -90,9 +93,9 @@ public class CsvReaderAppFinalBuild
 				pw.print("," + dailyRange);
 				pw.println(","+dAtr);
 			}
-			filereader.close();
+			System.out.println("--------------CSV file was created successfully--------------------------------------");
 			csvReader.close();
-			writer.close();
+			filereader.close();
 			pw.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

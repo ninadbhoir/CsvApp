@@ -12,6 +12,5 @@
 	<classpathentry kind="lib" path="C:/Users/Ninad/Downloads/jar_files/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ninad/Downloads/jar_files/commons-text-1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Ninad/Downloads/jar_files/opencsv-4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Ninad/Downloads/scanner-3.1.0.cr4-sources.jar/scanner-3.1.0.cr4-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
