@@ -19,8 +19,6 @@ public class CsvReaderAppFinalBuild
 	public static void main(String[] args) throws IOException {
 
 		readDataLineByLine(filePath1, filePath2, filePath3, outPutFile);
-		System.out.println(
-				"____________________________________________________________________________________________");
 	}
 	public static void readDataLineByLine(String File1, String File2, String File3, String outPutFile)
 			throws IOException {
